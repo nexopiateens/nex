@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<title>abc</title>
+  	<link rel="stylesheet" type="text/css" href="jquery.pageslide.css" />
+   <style type="text/css">
+   html, body, div, iframe { margin:0; padding:0; height:100%; }
+   iframe { display:block; width:100%; border:none; }
+  </style>
+
+
+ 
+
+
+
+
+
+
+</head>
+<body>
+    <div id="content">
+ 
+         <a href="_secondary.html" class="first">Slide to the right, and load content from a secondary page.</a>  derp
+
+
+
+<frameset cols="25%,50%,25%">
+  <frame src="frame_a.htm">
+  <frame src="frame_b.htm">
+  <frame src="frame_c.htm">
+</frameset>
+
+
+ 
+                <div id="client">
+
+
+              
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="jquery.pageslide.min.js"></script>
+    <script>
+        /* Default pageslide, moves to the right */
+        $(".first").pageslide();
+        
+        /* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
+        $(".second").pageslide({ direction: "left", modal: true });
+    </script>
+</div>
+</body>
+</html>

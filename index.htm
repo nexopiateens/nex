@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<title>nexopia teens chat</title>
+  	<link rel="stylesheet" type="text/css" href="jquery.pageslide.css" />
+  	<style>
+  	
+  	    html, body { min-height: 100%;
+        	background: #000;
+margin:0px; padding:0px;
+        	font: 14px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        	color: #666; 
+        	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+        	-webkit-text-size-adjust: none;
+        }
+
+        a, a:visited { color: #C30; text-decoration: none; border-bottom: 1px dotted #C30; }
+        a:hover { color: #900; border-bottom-style: solid; }
+
+        p { margin-bottom: 20px; }
+
+        #content {
+            width: 100%;
+            padding: 0px;
+            margin: 0 auto;
+        }
+            #content h1 { color: #333; line-height: 1em; }
+            #content ul { padding-left: 0; list-style: none; }
+                #content ul li { margin-bottom: 20px; }
+
+        #modal { padding:0px; top:0px; position:fixed; display: none; }
+            #modal a { background: #CCC; color: #333; font-weight: bold; padding: 0px 0px; border: none; }
+            #modal a:hover { background: #aaa; } 
+
+        pre { border: 0px solid #CCC; background-color: #EEE; color: #333; padding: 0px 0px; }
+        
+    </style>
+
+
+
+<script language="JavaScript">
+<!--
+function resize_iframe()
+{
+
+	var height=window.innerWidth;//Firefox
+	if (document.body.clientHeight)
+	{
+		height=document.body.clientHeight;//IE
+	}
+	//resize the iframe according to the size of the
+	//window (all these should be on the same line)
+	document.getElementById("glu").style.height=parseInt(height-
+	document.getElementById("glu").offsetTop-8)+"px";
+}
+
+// this will resize the iframe every
+// time you change the size of the window.
+window.onresize=resize_iframe; 
+
+//Instead of using this you can use: 
+//	<BODY onresize="resize_iframe()">
+
+
+//-->
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div id="content">
+ 
+         <a href="_secondary.html" class="first">Slide to the right, and load content from a secondary page.</a>  
+                
+               
+<script type="text/javascript">var tinychat = { room: "nexopiateens", colorbk: "0xffffff", join: "auto", api: "list"};</script><script src="http://tinychat.com/js/embed.js"></script><div id="client">
+
+
+              
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="jquery.pageslide.min.js"></script>
+    <script>
+        /* Default pageslide, moves to the right */
+        $(".first").pageslide();
+        
+        /* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
+        $(".second").pageslide({ direction: "left", modal: true });
+    </script>
+</div>
+</body>
+</html>
