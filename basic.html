@@ -9,35 +9,7 @@
   </style>
 
 
-
-<script language="JavaScript">
-<!--
-function resize_iframe()
-{
-
-	var height=window.innerWidth;//Firefox
-	if (document.body.clientHeight)
-	{
-		height=document.body.clientHeight;//IE
-	}
-	//resize the iframe according to the size of the
-	//window (all these should be on the same line)
-	document.getElementById("glu").style.height=parseInt(height-
-	document.getElementById("glu").offsetTop-8)+"px";
-}
-
-// this will resize the iframe every
-// time you change the size of the window.
-window.onresize=resize_iframe; 
-
-//Instead of using this you can use: 
-//	<BODY onresize="resize_iframe()">
-
-
-//-->
-</script>
-
-
+ 
 
 
 
@@ -48,7 +20,18 @@ window.onresize=resize_iframe;
 <body>
     <div id="content">
  
-         <a href="_secondary.html" class="first">Slide to the right, and load content from a secondary page.</a>  <iframe src="google.ca"></iframe>  
+         <a href="_secondary.html" class="first">Slide to the right, and load content from a secondary page.</a>  derp
+
+
+
+<frameset cols="25%,50%,25%">
+  <frame src="frame_a.htm">
+  <frame src="frame_b.htm">
+  <frame src="frame_c.htm">
+</frameset>
+
+
+ 
                 <div id="client">
 
 
